@@ -43,8 +43,8 @@ export default function ImageGridList(props) {
       items.push(
         <GridListTile key={props.question + i} cols={1}>
           <ButtonBase className={classes.image} onClick={() => props.handleClickTile(i)}>
-            <img className={classes.img2} src={'images/' + props.question + '/' + i + props.extension} alt={i} />
-            <img className={classes.check} src={'images/check.png'} alt={'check'} />
+            <img className={classes.img2} src={`${process.env.PUBLIC_URL}/images/${props.question}/${i}${props.extension}`} alt={i} />
+            <img className={classes.check} src={`${process.env.PUBLIC_URL}/images/check.png`} alt={'check'} />
           </ButtonBase>      
         </GridListTile>
       )
@@ -52,7 +52,7 @@ export default function ImageGridList(props) {
       items.push(
         <GridListTile key={props.question + i} cols={1}>
           <ButtonBase onClick={() => props.handleClickTile(i)}>
-            <img className={classes.img} src={'images/' + props.question + '/' + i + props.extension} alt={i} />
+            <img className={classes.img} src={`${process.env.PUBLIC_URL}/images/${props.question}/${i}${props.extension}`} alt={i} />
           </ButtonBase>
         </GridListTile>
       )

@@ -28,7 +28,7 @@ export default function TextGridList(props) {
     <div className={classes.root}>
       <GridList className={classes.gridList} cellHeight={'auto'} cols={1}>
         <GridListTile key={'start-text'} cols={1}>
-          <img className={classes.img} src={'images/start.png'} alt={0} />
+          <img className={classes.img} src={`${process.env.PUBLIC_URL}/images/start.png`} alt={0} />
         </GridListTile>
         <GridListTile key={'start-form'} cols={1}>
           <TextField id="standard-basic" label="Input" onChange={(e) => props.handleChange(e.target.value)} />
