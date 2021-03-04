@@ -10,7 +10,7 @@ import Clear from '../pages/Clear.js';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/captcha-nazo">
       <div>
         <Switch>
           <Route path="/main">
