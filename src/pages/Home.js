@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
   heroContent: {
     padding: theme.spacing(8, 0, 6),
   },
+  highlight: {
+    color: '#b30000',
+    fontWeight: 900,
+  },
 }));
 
 export default function Home() {
@@ -34,10 +38,10 @@ export default function Home() {
           <ol>
             <li>
               推奨環境はスマートフォン、ブラウザは最新版のGoogleChromeです。<br/>
-              PCは非推奨です。
+              <span className={classes.highlight}>PCは非推奨</span>です。
             </li>
             <li>
-              ソースコードの閲覧を禁止します。
+            <span className={classes.highlight}>ソースコードの閲覧を禁止</span>します。
             </li>
             <li>
               URLをいじる必要はありません。
