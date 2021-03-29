@@ -6,6 +6,7 @@ import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 
+import TweetButton from '../components/TweetButton.js'
 import Footer from '../components/Footer.js'
 
 const useStyles = makeStyles((theme) => ({
@@ -27,6 +28,12 @@ export default function Clear() {
         <Typography variant="h5" align="center" component="p">
           あなたは人間であることを証明しました
         </Typography>
+      </Container>
+      <Container maxWidth="sm" align="center">
+        <Typography variant="subtitle1" align="center" component="p">
+          クリアツイートはこちらからどうぞ
+        </Typography>
+        <TweetButton />
       </Container>
       <Footer />
     </React.Fragment>
