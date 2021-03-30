@@ -25,7 +25,7 @@ export default function HintAccordion(props) {
       >
         <Typography className={classes.heading}>{props.head}</Typography>
       </AccordionSummary>
-      <AccordionDetails>
+      <AccordionDetails className={props.style}>
         {props.body}
       </AccordionDetails>
     </Accordion>

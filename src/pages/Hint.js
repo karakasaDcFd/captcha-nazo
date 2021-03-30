@@ -2,20 +2,19 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
 import HintAccordion from '../components/HintAccordion.js';
 import Footer from '../components/Footer.js'
-import { Autorenew } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(8, 0, 6),
   },
   imgbox: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: theme.palette.background.paper,
   },
   img: {
@@ -37,19 +36,18 @@ export default function Hint() {
         />
         <HintAccordion
           head="5問目ヒント1"
-          body={
-            <div className={classes.imgbox}>
-              <img className={classes.img} src={`${process.env.PUBLIC_URL}/images/hint1.png`} alt="hint1" />
-            </div>
-          }
+          body={<img className={classes.img} src={`${process.env.PUBLIC_URL}/images/hint1.png`} alt="hint1" />}
+          style={classes.imgbox}
         />
         <HintAccordion
           head="5問目ヒント2"
           body={<img className={classes.img} src={`${process.env.PUBLIC_URL}/images/hint2.png`} alt="hint2" />}
+          style={classes.imgbox}
         />
         <HintAccordion
           head="5問目ヒント3"
           body={<img className={classes.img} src={`${process.env.PUBLIC_URL}/images/hint3.png`} alt="hint3" />}
+          style={classes.imgbox}
         />
         <HintAccordion
           head="5問目ヒント4"
