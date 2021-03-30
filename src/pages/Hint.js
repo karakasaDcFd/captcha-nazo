@@ -6,13 +6,21 @@ import Typography from '@material-ui/core/Typography';
 
 import HintAccordion from '../components/HintAccordion.js';
 import Footer from '../components/Footer.js'
+import { Autorenew } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(8, 0, 6),
   },
+  imgbox: {
+    display: 'flex',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
   img: {
-    maxWidth: "100%",
+    maxWidth: '100%',
+    height: 'auto',
   },
 }));
 
@@ -29,7 +37,11 @@ export default function Hint() {
         />
         <HintAccordion
           head="5問目ヒント1"
-          body={<img className={classes.img} src={`${process.env.PUBLIC_URL}/images/hint1.png`} alt="hint1" />}
+          body={
+            <div className={classes.imgbox}>
+              <img className={classes.img} src={`${process.env.PUBLIC_URL}/images/hint1.png`} alt="hint1" />
+            </div>
+          }
         />
         <HintAccordion
           head="5問目ヒント2"
