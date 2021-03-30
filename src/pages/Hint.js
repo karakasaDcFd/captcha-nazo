@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     maxWidth: '100%',
-    height: 'auto'
+    height: 'auto',
   },
 }));
 
