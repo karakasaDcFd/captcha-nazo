@@ -12,8 +12,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(8, 0, 6),
   },
   img: {
-    maxWidth: '100%',
-    height: 'auto',
+    maxWidth: "100%",
   },
 }));
 
