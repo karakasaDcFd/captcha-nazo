@@ -32,7 +32,7 @@ export default function Hint() {
       <Container maxWidth="sm" component="main" className={classes.root}>
         <HintAccordion
           head="5問目で画像が表示されない"
-          body={<Typography>5問目の画像が全てNo Imageとなっているのは仕様です。</Typography>}
+          body={<Typography>5問目の画像が全てNO IMAGEとなっているのは仕様です。</Typography>}
         />
         <HintAccordion
           head="5問目ヒント1"
