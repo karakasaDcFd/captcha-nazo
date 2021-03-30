@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import Home from '../pages/Home.js';
+import Hint from '../pages/Hint.js';
 import Main from '../pages/Main.js';
 import Clear from '../pages/Clear.js';
 
@@ -13,6 +14,9 @@ function App() {
     <Router basename="/captcha-nazo">
       <div>
         <Switch>
+          <Route path="/hint">
+            <Hint />
+          </Route>
           <Route path="/main">
             <Main />
           </Route>

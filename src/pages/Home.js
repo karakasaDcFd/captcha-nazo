@@ -53,6 +53,9 @@ export default function Home() {
             私はロボットではありません
           </Button>
         </Box>
+        <Box mt={5} textAlign='center'>
+          <Link to="/hint">ヒントはこちら</Link>
+        </Box>
       </Container>
       <Footer />
     </React.Fragment>
