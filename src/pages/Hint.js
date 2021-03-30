@@ -56,7 +56,7 @@ export default function Hint() {
       <Container maxWidth="sm" component="main">
         <Typography variant="subtitle1" align="center" component="p">
           個別に聞きたいことのある方は
-          <a href="https://twitter.com/KarakasaDcFd">
+          <a href="https://twitter.com/KarakasaDcFd" target="_blank">
             制作者のTwitter
           </a>
           のDMまでどうぞ
